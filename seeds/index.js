@@ -21,7 +21,12 @@ const seedDB = async () => {
             author:'615982840b2826b1eca6c915',
             location: `${cities[random1000].city}, ${cities[random1000].state}`,
             title: `${sample(descriptors)} ${sample(places)}`,
-            image: 'https://source.unsplash.com/collection/155011',
+            images: [
+                {
+                  url: 'https://res.cloudinary.com/drdg6tx1q/image/upload/v1633506935/Campy/qndzirvmojsig8pi62uz.jpg',
+                  filename: 'Campy/qndzirvmojsig8pi62uz'
+                }
+              ],
             description: 'bla bla',
             price
         })
